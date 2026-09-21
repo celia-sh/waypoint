@@ -1,0 +1,4 @@
+{"file":".trellis/spec/guides/repository-context-summaries.md","reason":"Check that the persistent rule forbids outside locators and requires standalone redacted summaries."}
+{"file":".trellis/spec/guides/index.md","reason":"Check that the context-summary rule is discoverable to future Trellis work."}
+{"file":".trellis/spec/guides/waypoint-boundaries.md","reason":"Check that release-boundary changes do not alter Waypoint/Trellis ownership or runtime behavior."}
+{"file":".trellis/tasks/09-21-release-boundary/research/context-summary-audit.md","reason":"Check that the release decision is represented by repository-local facts without source locators."}

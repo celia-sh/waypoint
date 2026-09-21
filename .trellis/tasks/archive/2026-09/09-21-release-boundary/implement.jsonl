@@ -1,0 +1,4 @@
+{"file":".trellis/spec/guides/repository-context-summaries.md","reason":"Defines the persistent rule for repository-relative Trellis context and standalone summaries when outside facts are unavoidable."}
+{"file":".trellis/spec/guides/waypoint-boundaries.md","reason":"Preserves the product boundary that Waypoint owns runtime behavior while Trellis owns workflow and task artifacts."}
+{"file":".trellis/spec/guides/index.md","reason":"Confirms the persistent context-summary guide is discoverable from the shared guide index."}
+{"file":".trellis/tasks/09-21-release-boundary/research/context-summary-audit.md","reason":"Contains the repository-local sanitized facts and redaction result for this release-boundary decision."}

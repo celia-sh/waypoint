@@ -1,0 +1,7 @@
+{"file":".trellis/spec/guides/waypoint-boundaries.md","reason":"Review forbidden behavior, truthful projection, no generic plugins, no task writes and uninstall safety"}
+{"file":".trellis/tasks/archive/2026-09/09-20-waypoint-v1/research/runtime-contracts.md","reason":"Check native schema and lifecycle assumptions, final-Verify gap, thinking forwarding and session isolation"}
+{"file":".trellis/tasks/archive/2026-09/09-20-waypoint-v1/research/collaboration-design.md","reason":"Verify agent-owned model choice, role boundaries, stable guidance and no cost-minimizing heuristics"}
+{"file": ".trellis/spec/backend/extension-contracts.md", "reason": "Implemented config, routing and native evidence contracts"}
+{"file": ".trellis/spec/frontend/native-ui.md", "reason": "Implemented Pi panel, selectors, width and lifecycle contracts"}
+{"file": ".trellis/tasks/archive/2026-09/09-20-waypoint-v1/research/task-widget-layout.md", "reason": "Verified prior widget and approved task-family scope, task-only hierarchy/closed filtering/expansion controls, English labels with ASCII markers, native archive and Pi shortcut constraints"}
+{"file": ".trellis/tasks/archive/2026-09/09-20-waypoint-v1/research/native-status-ownership.md", "reason": "Current ownership: stable native task status (Processing), no Waypoint execution observation/replay/UI, and exclusive native card/Alt+O execution presentation"}

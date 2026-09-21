@@ -1,0 +1,7 @@
+{"file":".trellis/spec/guides/waypoint-boundaries.md","reason":"Explicit ownership, advisory-only routing, no extra runtime or task state, and minimal dogfooding baseline"}
+{"file":".trellis/tasks/archive/2026-09/09-20-waypoint-v1/research/runtime-contracts.md","reason":"Verified Pi/Trellis APIs, per-dispatch capability, task/session formats, progress evidence and compatibility gaps"}
+{"file":".trellis/tasks/archive/2026-09/09-20-waypoint-v1/research/collaboration-design.md","reason":"Quality-oriented mixed-model collaboration and the short stable routing policy; no mechanical upgrade hints"}
+{"file": ".trellis/spec/backend/extension-contracts.md", "reason": "Implemented config, routing and native evidence contracts"}
+{"file": ".trellis/spec/frontend/native-ui.md", "reason": "Implemented Pi panel, selectors, width and lifecycle contracts"}
+{"file": ".trellis/tasks/archive/2026-09/09-20-waypoint-v1/research/task-widget-layout.md", "reason": "Verified prior widget and approved task-family scope, task-only hierarchy/closed filtering/expansion controls, English labels with ASCII markers, native archive and Pi shortcut constraints"}
+{"file": ".trellis/tasks/archive/2026-09/09-20-waypoint-v1/research/native-status-ownership.md", "reason": "Current ownership: stable native task status (Processing), no Waypoint execution observation/replay/UI, and exclusive native card/Alt+O execution presentation"}
