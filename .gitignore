@@ -1,0 +1,42 @@
+# Dependencies and build output
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
+
+# Editor, operating-system, cache, and log output
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
+*.tmp
+.cache/
+*.log
+
+# Environment and local configuration
+.env
+.env.*
+.npmrc
+.session
+.session.json
+sessions/
+**/sessions/
+settings.local.json
+local.settings.json
+
+# Credentials and private key/certificate material
+*credentials*
+*secret*
+*.token
+*.tokens
+*.secret
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+*.der
+*.asc
+*.gpg

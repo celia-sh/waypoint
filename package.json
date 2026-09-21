@@ -1,0 +1,50 @@
+{
+  "name": "@celia-sh/waypoint",
+  "version": "0.1.0",
+  "description": "Model choice and read-only Trellis task visibility for Pi",
+  "type": "module",
+  "license": "AGPL-3.0-or-later",
+  "keywords": [
+    "pi-package",
+    "trellis"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/celia-sh/waypoint.git"
+  },
+  "files": [
+    "src/",
+    "README.md",
+    "LICENSE"
+  ],
+  "pi": {
+    "extensions": [
+      "./src/index.ts"
+    ]
+  },
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "scripts": {
+    "lint": "biome lint src tests",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run tests/unit",
+    "test:integration": "vitest run tests/integration"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-agent-core": ">=0.85.1 <0.86.0",
+    "@earendil-works/pi-ai": ">=0.85.1 <0.86.0",
+    "@earendil-works/pi-coding-agent": ">=0.85.1 <0.86.0",
+    "@earendil-works/pi-tui": ">=0.85.1 <0.86.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.2.4",
+    "@earendil-works/pi-agent-core": "0.85.1",
+    "@earendil-works/pi-ai": "0.85.1",
+    "@earendil-works/pi-coding-agent": "0.85.1",
+    "@earendil-works/pi-tui": "0.85.1",
+    "@types/node": "22.19.19",
+    "typescript": "5.9.3",
+    "vitest": "4.1.11"
+  }
+}
