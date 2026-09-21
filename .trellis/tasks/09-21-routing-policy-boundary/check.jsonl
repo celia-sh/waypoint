@@ -1,0 +1,5 @@
+{"file":".trellis/spec/backend/extension-contracts.md","reason":"Check the final implementation against the routing/context contract and native Trellis ownership rules."}
+{"file":".trellis/spec/guides/waypoint-boundaries.md","reason":"Check that the refined wording remains advisory and introduces no classifier, runtime, dispatch wrapper, or execution observation."}
+{"file":".trellis/tasks/archive/2026-09/09-20-waypoint-v1/research/collaboration-design.md","reason":"Review the final policy against prior decisions about bounded delegation, missing evidence, Strong role scope, and cost/quality tradeoffs."}
+{"file":".trellis/tasks/archive/2026-09/09-20-waypoint-v1/research/runtime-contracts.md","reason":"Review ordering and persistence behavior against verified Pi context projection and custom-message conversion behavior."}
+{"file":".trellis/tasks/09-21-routing-policy-boundary/research/implementation-evidence.md","reason":"Review the implementation evidence, runtime reload caveat, and completed validation results against the task acceptance criteria."}

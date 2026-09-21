@@ -1,0 +1,4 @@
+{"file":".trellis/spec/backend/extension-contracts.md","reason":"Defines the routingPolicy/projectPolicy signatures, ephemeral context projection, explicit user precedence, and no-wrapper/native ownership boundaries."}
+{"file":".trellis/spec/guides/waypoint-boundaries.md","reason":"Defines the no-router, no-model-call, advisory guidance, native Trellis, and context-projection boundaries that the policy refinement must preserve."}
+{"file":".trellis/tasks/archive/2026-09/09-20-waypoint-v1/research/collaboration-design.md","reason":"Records the approved delegation philosophy, evidence-first handling of missing information, Strong role flexibility, and rejection of heuristic escalation."}
+{"file":".trellis/tasks/archive/2026-09/09-20-waypoint-v1/research/runtime-contracts.md","reason":"Records the verified Pi context-event call chain and custom-message conversion constraints for per-invocation projection."}

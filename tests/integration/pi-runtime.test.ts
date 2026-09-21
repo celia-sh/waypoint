@@ -22,6 +22,7 @@ import {
   type AgentSession,
 } from "@earendil-works/pi-coding-agent";
 import { type TUI, Container, type Component } from "@earendil-works/pi-tui";
+import type { AgentMessage } from "@earendil-works/pi-agent-core";
 import { project } from "../unit/fixtures.js";
 import { afterEach, describe, expect, it, vi } from "vitest";
 
@@ -225,13 +226,37 @@ describe("Pi + native Trellis + Waypoint only", () => {
         (request) => request.split("Default Strong model:").length - 1,
       ),
     ).toEqual([1, 1, 0, 1]);
-    const rebuilt = await session.extensionRunner.emitContext([]);
-    expect(
-      rebuilt.filter(
-        (message) =>
-          message.role === "custom" && message.customType === policyType,
-      ),
-    ).toHaveLength(1);
+    for (const request of requests.filter((request) =>
+      request.includes("Default Strong model:"),
+    )) {
+      expect(request.indexOf("Default Strong model:")).toBeLessThan(
+        request.indexOf("For this check use explicit-provider/user-choice"),
+      );
+    }
+    const rebuiltInput: AgentMessage[] = [
+      {
+        role: "custom",
+        customType: "native",
+        content: "Reconstructed context",
+        display: false,
+        timestamp: 1,
+      },
+      {
+        role: "user",
+        content: "Reconstructed user request",
+        timestamp: 2,
+      },
+    ];
+    const rebuilt = await session.extensionRunner.emitContext(rebuiltInput);
+    const rebuiltPolicyIndex = rebuilt.findIndex(
+      (message) =>
+        message.role === "custom" && message.customType === policyType,
+    );
+    expect(rebuilt.filter((message) =>
+      message.role === "custom" && message.customType === policyType,
+    )).toHaveLength(1);
+    expect(rebuiltPolicyIndex).toBe(1);
+    expect(rebuilt[rebuiltPolicyIndex + 1]).toEqual(rebuiltInput[1]);
     expect(JSON.stringify(rebuilt)).toContain("thinking=medium");
     expect(requests[0]).toContain("thinking=high");
     expect(requests[1]).toContain("thinking=medium");

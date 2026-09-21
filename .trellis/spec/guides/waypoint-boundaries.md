@@ -11,13 +11,13 @@ These constraints come from the product brief and user clarification. The first 
 
 ## Required Boundaries
 
-- Guidance, never event-triggered advice to use Strong. No semantic classifier, retry threshold, token/file threshold, or cost scheduler.
+- Guidance, never event-triggered advice to use Strong. Delegation and model strength are separate decisions: bounded simple work may be delegated to the normal/current model, while Strong requires an evidence-backed reasoning bottleneck. No semantic classifier, retry threshold, token/file threshold, or cost scheduler.
 - No model completion/streaming calls, agent spawning, extra sessions, generic subagent dependencies or fallback runtime in Waypoint production code.
 - No task writes, manual Todo tools, persisted phase state, generated Trellis patches or Todo synchronization.
 - Current development Todo/subagent tools are temporary and excluded from the production design and verification baseline.
 - Use Pi's current registry and thinking capability helpers. Model identities are provider + ID; never guess capabilities from a model name.
-- TUI Strong is a default option. Explicit user model/thinking instructions take precedence within their scope; the main agent, not an extension parser, interprets them and supplies native dispatch arguments.
-- Use Pi's per-invocation context projection for one current policy block. Do not persist repeated policy messages, add summary hooks, wrap native dispatch, introduce preset APIs or rewrite tool arguments.
+- The normal/current model is the model-tier default for each native dispatch; Strong is an available option, not insurance. Routine inspection, evidence gathering, straightforward tracing, obvious checks, routine implementation, and mechanical validation normally use the normal/current model, whether delegated or not. Explicit user model/thinking instructions take precedence within their scope; the main agent, not an extension parser, interprets them and supplies native dispatch arguments.
+- Use Pi's per-invocation context projection for one current policy block. Remove only Waypoint's marker, preserve all other messages and their order, and place the block immediately before the latest real user message when one exists. Do not persist repeated policy messages, add summary hooks, wrap native dispatch, introduce preset APIs or rewrite tool arguments.
 - Trellis already owns spec updates, artifact curation and workflow guidance. Do not add competing spec/handoff/checklist instructions to Waypoint's policy.
 - Preserve unknown/missing/error task evidence. A successful native run is not independent proof of correctness and does not change Waypoint task status; clearing an active pointer is not completion. Native Trellis cards own execution outcomes and any unavailable final-scope fact does not justify a second protocol.
 - Use session-scoped native task identity. Do not borrow another session's active task or replay execution history.

@@ -30,11 +30,16 @@ JSON keys; mode overrides are `waypoint-mode` custom entries with `{mode}`.
 Replay those entries from `getBranch()`, not all session entries. Missing config
 means Auto and no selected Strong. Saves are serialized atomic replacements.
 
-The `context` handler reloads current config and returns an ephemeral
+The `context` handler reloads current config and returns one ephemeral
 `waypoint-routing-policy` custom message. Remove only Waypoint's marker; preserve
-all original messages. Off, unavailable capabilities and Auto provider/ID equality
-produce no policy. Explicit user instructions outrank the default preset. Do not
-parse user prose or turn native execution outcomes into upgrade advice.
+all other messages and their relative order. When a policy is applicable, insert
+it immediately before the latest real `user` message; append only when no such
+message exists. Off, unavailable capabilities and Auto provider/ID equality
+produce no policy. Explicit user instructions outrank the default preset. The
+policy separates delegation from model strength: simple bounded work may still
+be delegated to the normal/current model, while Strong requires an evidence-backed
+reasoning bottleneck and is not automatic insurance. Do not parse user prose or
+turn native execution outcomes into upgrade advice.
 
 Native compatibility verifies trusted root, registered and active tool,
 `sourceInfo.path`, exact tested integration bytes, role files and dispatch schema.
