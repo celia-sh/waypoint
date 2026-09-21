@@ -1,6 +1,6 @@
 {
   "name": "@celia-sh/waypoint",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Model choice and read-only Trellis task visibility for Pi",
   "type": "module",
   "license": "AGPL-3.0-or-later",
